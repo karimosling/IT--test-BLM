@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konklusjon</title>
+    <style>
+        body{
+            font-family: sans-serif;
+
+        }
+        header{
+            text-align: center;
+            background-color: #FFF711;
+            margin: 0;
+            padding: 10px;
+            background-image: url("Bilder/navbilde2.jpg");
+            background-size: cover  ;
+
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+
+        }
+        nav a{
+            flex-grow: 1;
+            flex-shrink: 1;
+            border: 1px solid black;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            font-size: larger;
+        }
+        nav a:hover{
+            background-color: black;
+            color: #FFF711;
+        }
+        h1{
+            font-size: 50px;
+        }
+        #overskrift{
+            color: black;
+            text-shadow: 0 2px 0 #FFF711;
+            text-shadow: 0 -2px 0 #FFF711;
+            text-shadow: 2px 0 0 #FFF711;
+            text-shadow: -2px 0 0 #FFF711;
+        }
+        footer{
+            display: flex;
+            align-items: center;
+        }
+        footer article{
+            flex-shrink: 1;
+            flex-grow: 1;
+            border: solid black 1px;
+            text-align: center;
+
+        }
+        article a{
+            text-decoration: none;
+            color: black;
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            margin: 30px;
+            margin-bottom: 50px;
+        }
+        p{
+            padding: 10px;
+        }
+        h2{
+            text-align: center;
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+        }
+        li a:hover{
+            text-decoration: underline;
+        }
+        @media(max-width: 700px){
+            main{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 id="overskrift">Prosjekt sosiale medier</h1>
+</header>
+<nav>
+    <a href="index.html">Forside</a>
+    <a href="problemstilling.html">Problemstilling</a>
+    <a href="drofting.html">Drøfting</a>
+    <a href="konklusjon.html">Konklusjon</a>
+</nav>
+<h2>Konklusjon</h2>
+<main>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet animi architecto asperiores assumenda consequuntur deserunt eius eveniet in incidunt inventore minima nemo pariatur perspiciatis praesentium quidem sed, sequi sit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias id nobis quae quisquam saepe vel veniam, vitae! Animi eligendi soluta sunt vero? Adipisci est ex iusto minus, temporibus vel veniam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur dolores quidem ratione similique velit? Adipisci atque, culpa deleniti deserunt enim eveniet molestiae natus nesciunt perferendis, quia quis similique, soluta voluptatem!</p>
+    <img src="Bilder/sisteside.jpg" alt="img">
+
+</main>
+
+<footer>
+    <article>Laget av:</article>
+    <article><a href="https://www.instagram.com/vildus_jah/" target="_blank">Vilde Alstad</a></article>
+    <article><a href="https://www.instagram.com/kebabkari/" target="_blank">Kari Mosling</a></article>
+</footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            min-width: 300px;
+            max-width: 700px;
+            border: 2px solid black;
+        }
+        .header{
+            width: 100%;
+            border-bottom: 2px solid black;
+            flex-basis: 128px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            background-color: fuchsia;
+        }
+        .main-content{
+            width: 100%;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+        }
+        .left{
+            flex-basis: 130px;
+            background-color: #ED2939;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border-right: 2px solid black;
+            display: flex;
+            flex-direction: column;
+        }
+        .mid{
+            flex-basis: 440px;
+
+        }
+        .right{
+            flex-basis: 130px;
+            background-color: #ED2939;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border-left: 2px solid black;
+        }
+
+        .footer{
+            width: 100%;
+            border-top: 2px solid black;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 108px;
+            background-color: fuchsia;
+        }
+
+        .en{
+            background-color: lightblue;
+            margin: 5px;
+            flex-basis: 100px;
+        }
+
+        .to{
+            background-color: lightblue;
+            margin: 5px;
+            flex-basis: 100px;
+        }
+
+        .tre{
+            background-color: lightblue;
+            margin: 5px;
+            flex-basis: 100px;
+        }
+
+        .fire{
+            background-color: lightblue;
+            margin: 5px;
+            flex-basis: 100px;
+        }
+
+        .fem{
+            background-color: lightblue;
+            margin: 5px;
+            flex-basis: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="main">
+    <div class="header"> </div>
+        <div class="main-content">
+            <div class="left">
+                <div class="en"><a href="https://www.facebook.com/" target="_blank">Facebook</a> </div>
+                <div class="to">Side 1</div>
+                <div class="tre">Side 2</div>
+                <div class="fire">Side 3</div>
+                <div class="fem">Side 4</div>
+            </div>
+            <div class="mid"></div>
+            <div class="right"></div>
+        </div>
+    <div class="footer"></div>
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ferietipsene!</title>
+    <style>
+        body{
+            margin: 0 auto;
+            font-family: sans-serif;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            margin-top: 0;
+        }
+        nav a{
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px ;
+            margin: 5px;
+        }
+        #en{
+            background-color: red;
+
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            max-width: 1000px;
+            min-width: 400px;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        }
+        main img{
+            width: 100%;
+            height: 150px;
+        }
+        article{
+            background-color: whitesmoke;
+            text-align: center;
+        }
+        @media(max-width: 800px){
+            main{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        @media(max-width: 600px){
+            main{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media(max-width: 500px){
+            nav{
+                flex-direction: column;
+                max-width: 200px;
+                text-align: center;
+            }
+        }
+        h1{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <a href="#" id="en">FERIETIPS</a>
+        <a href="#">Reise i Norge</a>
+        <a href="#">Reise til ut landet</a>
+    </nav>
+</header>
+
+    <h1>10 på topp</h1>
+    <h2>De mest populære stedene å besøke i både utland og innland</h2>
+<main>
+    <article><img src="bilder/nordkap.jpg" alt="nordkap"><h4>Nordkap</h4></article>
+    <article><img src="bilder/preikestolen.jpg" alt="prekestolen"><h4>Preikestolen</h4></article>
+    <article><img src="bilder/opera.jpg" alt="opera"><h4>Oslo</h4></article>
+    <article><img src="bilder/trolltunga.jpeg" alt="trolltunga"><h4>Trolltunga</h4></article>
+    <article><img src="bilder/beijing.jpg" alt="kina"><h4>Beijing</h4></article>
+    <article><img src="bilder/roma.jpg" alt="Roma"><h4>Roma</h4></article>
+    <article><img src="bilder/london.jpeg" alt="london"><h4>London</h4></article>
+    <article><img src="bilder/paris.jpg" alt="paris"><h4>Paris</h4></article>
+    <article><img src="bilder/NY.jpg" alt="NY"><h4>New York</h4></article>
+    <article><img src="bilder/barcelona.jpg" alt="barcelona"><h4>Barcelona</h4></article>
+</main>
+
+</body>
+</html>

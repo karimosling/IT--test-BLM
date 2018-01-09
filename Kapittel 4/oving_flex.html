@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flexing</title>
+    <style>
+        .main{
+            display: flex;
+            flex-direction: column;
+            min-width: 400px;
+            max-width: 800px;
+        }
+        .head{
+            width: 100%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            background-color: red;
+            flex-basis: 200px;
+
+        }
+        .midt{
+            display: flex;
+            flex-direction: row;
+            height: 500px;
+        }
+        .side{
+            flex-basis: 150px;
+            flex-grow: 0;
+            flex-shrink: 0;
+
+            background-color: blue;
+        }
+        .to{
+            flex-basis:500px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        .bunn{
+            background-color: red;
+            flex-basis: 200px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        .stor{
+            display: flex;
+            flex-direction: row;
+            height: 200px;
+            max-width: 1000px;
+            min-width: 500px;
+            background-color: blue;
+        }
+        .liten1{
+            flex-basis: 100px;
+            background-color: red;
+            flex-grow:2;
+            flex-shrink: 2;
+            border: 1px solid black;
+            margin: 20px;
+        }
+        .liten2{
+            flex-basis: 150px;
+            background-color: green;
+            flex-grow: 0;
+            flex-shrink: 0;
+            border: 1px solid black;
+            margin: 20px;
+        }
+        .liten3{
+            flex-basis: 100px;
+            background-color: white;
+            border: 1px solid black;
+            margin: 20px;
+            flex-grow: 5;
+            flex-shrink: 5;
+        }
+
+        header nav{
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+            flex-basis: 100px;
+            font-family: sans-serif;
+            max-width: 800px;
+            min-width: 100px;
+        }
+        header nav a{
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            padding: 20px 50px;
+        }
+        header nav a:hover{
+            background-color: red;
+        }
+        header nav a:active{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="head"></div>
+    <div class="midt">
+        <div class="side"></div>
+        <div class="to"></div>
+        <div class="side"></div>
+    </div>
+    <div class="bunn"></div>
+</div>
+<br><br><br><br><br>
+
+<div class="stor">
+    <div class="liten1"></div>
+    <div class="liten2"></div>
+    <div class="liten3"></div>
+</div>
+<br><br><br><br><br>
+
+<header>
+    <nav>
+        <a href="http://www.tv2.no/" target="_blank">TV 2 </a>
+        <a href="https://www.vg.no/" target="_blank">VG </a>
+        <a href="https://www.nrk.no/" target="_blank">NRK </a>
+        <a href="https://www.facebook.com/" target="_blank">Facebook </a>
+    </nav>
+</header>
+
+</body>
+</html>

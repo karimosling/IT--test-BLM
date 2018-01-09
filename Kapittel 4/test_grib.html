@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid eksempel</title>
+    <style>
+        main{
+            display: grid;
+            grid-template-columns: 150px 1fr 150px;
+            grid-template-rows: 50px 400px 50px;
+            grid-row-gap: 5px;
+            grid-column-gap: 15px;
+            min-width: 600px;
+            max-width: 1000px;
+        }
+        main article{
+            background-color: lightpink;
+        }
+        .banner{
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <article class="banner">Element 1</article>
+    <article>Element 2</article>
+    <article>Element 3</article>
+    <article>Element 4</article>
+    <article class="banner">Element 5</article>
+
+</main>
+
+
+</body>
+</html>

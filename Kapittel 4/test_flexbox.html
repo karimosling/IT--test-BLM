@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flexbox</title>
+    <style>
+        .stor{
+            display: flex;
+            background-color: blue;
+            border:1px black solid;
+            max-width: 1000px;
+            min-width: 100px;
+            height: 200px;
+        }
+        .en{
+            background-color: red;
+            flex-basis: 200px;
+            border: solid 1px black;
+            margin: 20px;
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+        .to{
+            background-color: white;
+            flex-basis: 300px;
+            border: solid 1px black;
+            margin: 20px;
+            flex-grow: 0;
+            flex-shrink: 5;
+        }
+        .tre {
+            background-color: #6A9325;
+            flex-basis: 200px;
+            border: solid 1px black;
+            margin: 20px;
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+      
+    </style>
+</head>
+<body>
+<h1>Oppgaver Flexbox</h1>
+
+<div class="stor" >
+    <div class="en"> </div>
+    <div class="to"></div>
+    <div class="tre"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Problemstilling</title>
+    <style>
+        body{
+            font-family: sans-serif;
+
+        }
+        header{
+            text-align: center;
+            background-color: #FFF711;
+            margin: 0;
+            padding: 10px;
+            background-image: url("Bilder/navbilde2.jpg");
+            background-size: cover  ;
+
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+
+        }
+        nav a{
+            flex-grow: 1;
+            flex-shrink: 1;
+            border: 1px solid black;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            font-size: larger;
+        }
+        nav a:hover{
+            background-color: black;
+            color: #FFF711;
+        }
+        h1{
+            font-size: 50px;
+        }
+        #overskrift{
+            color: black;
+            text-shadow: 0 2px 0 #FFF711;
+            text-shadow: 0 -2px 0 #FFF711;
+            text-shadow: 2px 0 0 #FFF711;
+            text-shadow: -2px 0 0 #FFF711;
+        }
+        footer{
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+        }
+        footer article{
+            flex-shrink: 1;
+            flex-grow: 1;
+            border: solid black 1px;
+            text-align: center;
+
+        }
+        article a{
+            text-decoration: none;
+            color: black;
+        }
+        h2{
+            text-align: center;
+        }
+        main{
+            margin: 10px 70px 10px 70px ;
+
+        }
+        @media(max-width: 800px){
+            main{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+        .tekst{
+            text-align: center;
+            font-size: x-large;
+            padding: 30px;
+
+        }
+        img{
+            margin: 0 auto;
+            width: 100%;
+
+
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 id="overskrift">Prosjekt sosiale medier</h1>
+</header>
+
+<nav>
+    <a href="index.html">Forside</a>
+    <a href="problemstilling.html">Problemstilling</a>
+    <a href="drofting.html">Drøfting</a>
+    <a href="konklusjon.html">Konklusjon</a>
+</nav>
+
+<h2>Problemstilling:</h2>
+<main>
+    <article class="tekst">Hvordan bruker organisasjoner som Black Lives Matter og andre aktivist-grupper sosiale medier til å spre og fremme sitt budskap?
+    </article>
+    <article><img src="Bilder/langtbilde.jpg.png" alt="img"></article>
+
+</main>
+
+<footer>
+    <article>Laget av:</article>
+    <article><a href="https://www.instagram.com/vildus_jah/" target="_blank">Vilde Alstad</a></article>
+    <article><a href="https://www.instagram.com/kebabkari/" target="_blank">Kari Mosling</a></article>
+</footer>
+</body>
+</html>

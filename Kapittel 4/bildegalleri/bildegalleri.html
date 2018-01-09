@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Bildegalleri</title>
+  <style>
+    *{
+      font-family: sans-serif;
+    }
+
+    h1{
+      text-align: center;
+      font-size: 70px;
+      padding: 10px;
+    }
+    div{
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      color: black;
+      border:1px solid black;
+      margin-top: 0;
+      text-align: center;
+    }
+    .boks{
+      flex-grow:0;
+      flex-shrink: 0;
+      border: 1px solid black;
+      background-color: grey;
+      padding: 10px;
+      text-decoration: underline;
+      color: black;
+      width: 70px;
+      flex-basis: 100px;
+    }
+    .boks:hover{
+      color: white;
+    }
+    #mellomrom{
+      flex-grow: 1;
+      flex-shrink: 1;
+
+      padding: 10px;
+    }
+    main{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      border: 1px solid black;
+
+
+    }
+    img{
+      width: 100%;
+      border: 1px solid black;
+      display: block;
+      height: 100%;
+    }
+    img:hover{
+      filter: brightness(50%);
+    }
+    @media(max-width: 1000px){
+      main{
+        grid-template-columns: repeat(3, 1fr);
+      }
+      h1{
+        font-size: 60px;
+      }
+    }
+    @media(max-width: 600px){
+      main{
+        grid-template-columns: repeat(2, 1fr);
+      }
+      h1{
+        font-size: 50px;
+      }
+      article{
+        font-size: smaller;
+      }
+    }
+    @media(max-width: 400px){
+      main{
+        grid-template-columns: 1fr;
+      }
+      h1{
+        font-size: 40px;
+      }
+    }
+    @media(max-width: 500px){
+      .boks{
+        flex-shrink: 2;
+        flex-grow: 0;
+        flex-basis: 20vw;
+
+      }
+    }
+    footer{
+      border:2px solid black;
+      display: grid;
+      grid-template-columns:repeat(4, 1fr);
+      grid-template-rows: 1fr;
+    }
+
+  </style>
+</head>
+<body>
+<header>
+  <h1>Bildegalleri</h1>
+  <div>
+    <a href="#"><div class="boks">Hjem</div></a>
+    <div id="mellomrom"></div>
+    <a href="#"><div class="boks">Lenke 1</div></a>
+    <a href="#"><div class="boks">Lenke 2</div></a>
+    <a href="#"><div class="boks">Lenke 3</div></a>
+    <a href="#"><div class="boks">Lenke 4</div></a>
+  </div>
+</header>
+
+<main>
+  <a href="#"><img src="bilder/bilde1.jpg"></a>
+  <a href="#"><img src="bilder/bilde2.jpg"></a>
+  <a href="#"><img src="bilder/bilde3.jpg"></a>
+  <a href="#"><img src="bilder/bilde4.jpg"></a>
+  <a href="#"><img src="bilder/bilde5.jpg"></a>
+  <a href="#"><img src="bilder/bilde6.jpg"></a>
+  <a href="#"><img src="bilder/bilde7.jpg"></a>
+  <a href="#"><img src="bilder/bilde8.jpg"></a>
+</main>
+
+<footer>
+  <article>Kontaktinfo:</article>
+  <article>Epost: kari.mosling@gmail.com</article>
+  <article>Telefon: 92692017</article>
+  <article>Adresse: Folloveien 47</article>
+
+</footer>
+</body>
+</html>

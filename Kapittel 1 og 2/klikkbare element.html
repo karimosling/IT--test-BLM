@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>klikkbare element</title>
+    <style>
+        img{
+            border: 2px solid black
+        }
+        input[type=radio]:checked + label img{
+            border-color: red;
+        }
+        input[type=radio]{
+            display: none;
+        }
+        img:hover {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+<form action="registrering1.html">
+<h1>Velg din favorittsport:</h1>
+    <input type="radio" id="fotball" value="fotball" name="sport">
+    <label for="fotball" ><img src="Bilder/fotball1.jpg" alt="fotball" width="200px"></label>
+<br>
+    <input type="radio" id="håndball" value="håndball" name="sport">
+    <label for="håndball"><img src="Bilder/håndball5.jpeg" alt="håndball" width="200px"></label>
+<br>
+    <input type="radio" id="bowling" value="bowling" name="sport">
+    <label for="bowling" ><img src="Bilder/bowling1.jpg" alt="bowling" width="200px"></label>
+<br>
+    <input type="radio" id="basket" value="basket" name="sport">
+    <label for="basket" ><img src="Bilder/basket1.jpg" alt="basket" width="200px"></label>
+<br>
+<button>Send inn!</button>
+</form>
+</body>
+</html>

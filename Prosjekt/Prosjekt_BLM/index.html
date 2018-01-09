@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forside</title>
+    <style>
+        body{
+            font-family: sans-serif;
+
+        }
+        header{
+            text-align: center;
+            background-color: #FFF711;
+            margin: 0;
+            padding: 10px;
+            background-image: url("Bilder/navbilde2.jpg");
+            background-size: cover  ;
+
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+
+        }
+        nav a{
+            flex-grow: 1;
+            flex-shrink: 1;
+            border: 1px solid black;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            font-size: larger;
+        }
+        nav a:hover{
+            background-color: black;
+            color: #FFF711;
+        }
+        h1{
+            font-size: 50px;
+        }
+        #overskrift{
+            color: black;
+            text-shadow: 0 2px 0 #FFF711;
+            text-shadow: 0 -2px 0 #FFF711;
+            text-shadow: 2px 0 0 #FFF711;
+            text-shadow: -2px 0 0 #FFF711;
+        }
+        main{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 50px;
+            border: 2px solid black;
+        }
+        .tekst{
+            grid-row: span 3;
+            font-size: x-large;
+            padding: 20px;
+            padding-top: 0;
+
+        }
+        main article{
+            margin: 20px;
+        }
+        footer{
+            display: flex;
+            align-items: center;
+        }
+        footer article{
+            flex-shrink: 1;
+            flex-grow: 1;
+            border: solid black 1px;
+            text-align: center;
+
+        }
+        article a{
+            text-decoration: none;
+            color: black;
+        }
+        @media(max-width: 700px){
+            main{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            .tekst{
+                grid-row: span 1;
+            }
+        }
+        article img{
+            width: 100%;
+        }
+        #abc{
+            font-size: 40px;
+        }
+        #bilde1{
+            margin-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1 id="overskrift">Prosjekt sosiale medier</h1>
+</header>
+
+<nav>
+    <a href="index.html">Forside</a>
+    <a href="problemstilling.html">Problemstilling</a>
+    <a href="drofting.html">Drøfting</a>
+    <a href="konklusjon.html">Konklusjon</a>
+</nav>
+<main>
+    <article><img src="Bilder/to_damer.jpeg" id="bilde1" alt="bilde1"></article>
+    <article class="tekst"><p><h1 id="abc">Black lives matter</h1>Black Lives Matter er en organisasjon for afrikanske-amerikanske, som demonstrerer mot vold og rasisme mot afro-amerikanske, blant annet politivold. Bevegelsen startet 13 juli, 2013 i forbindelse med at Travyon ble skutt og drept av politiet. Men organisasjonen fikk først mye oppmerksomhet når en afrikansk-amerikansk ungdom, som het Miachel Brown ble skutt og drept uten å holde noe våpen. Organisasjonens største plattform er Twitter, og via emneknaggen Blacklivesmatter. I denne oppgaven vil vi derfor diskutere og drøfte hvordan organisasjonen har spredt informasjon og hvordan de bruker sosiale medier for å fremme budskapet sitt. Før når noe skjedde i verden, kunne man bruke flere dager, eller flere uker på at nyhetene skulle bli skrevet om i avisa og nå ut til hele verden. I dagens samfunn tar det bare et par sekunder før et bilde er lastet opp og delt på Twitter, eller en video er delt på Facebook. Denne nye måten å spre informasjon har Black Lives matter valgt å bruke, blant annet med hastagger, nettsider og kjendiser.  </p></article>
+    <article><img src="Bilder/dame.jpg" alt="bilde2"></article>
+</main>
+<footer>
+    <article>Laget av:</article>
+<article><a href="https://www.instagram.com/vildus_jah/" target="_blank">Vilde Alstad</a></article>
+<article><a href="https://www.instagram.com/kebabkari/" target="_blank">Kari Mosling</a></article>
+</footer>
+</body>
+</html>

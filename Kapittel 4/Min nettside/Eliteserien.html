@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eliteserien</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            margin: 0 auto;
+            text-decoration: none;
+            color: black;
+
+        }
+        body{
+            background-color: #e9e9e9;
+        }
+        main{
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            max-width: 1000px;
+            min-width: 600px;
+            grid-gap: 10px;
+        }
+        main article {
+            background-color: white;
+            color: #333;
+        }
+        main img{
+            width:  100%;
+        }
+
+
+        .kol1 {grid-column: span 1}
+        .kol2 {grid-column: span 2}
+        .kol3 {grid-column: span 3}
+        .kol4 {grid-column: span 4}
+        .kol5 {grid-column: span 5}
+        .kol6 {grid-column: span 6}
+        .kol7 {grid-column: span 7}
+        .kol8 {grid-column: span 8}
+        .kol9 {grid-column: span 9}
+        .kol10 {grid-column: span 10}
+        .kol11 {grid-column: span 11}
+        .kol12 {grid-column: span 12}
+
+        nav ul li{
+            list-style: none;
+            display: inline-block;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            padding: 15px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            width: 150px;
+        }
+        nav{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .eliteserien{
+            background-color: #0157ae;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        article:hover{
+            text-decoration: underline;
+        }
+        @media(max-width: 800px){
+            .kol1 {grid-column: span 6}
+            .kol2 {grid-column: span 6}
+            .kol3 {grid-column: span 6}
+            .kol4 {grid-column: span 6}
+            .kol5 {grid-column: span 6}
+            .kol6 {grid-column: span 6}
+            .kol7 {grid-column: span 12}
+            .kol8 {grid-column: span 12}
+            .kol9 {grid-column: span 12}
+            .kol10 {grid-column: span 12}
+            .kol11 {grid-column: span 12}
+            .kol12 {grid-column: span 12}
+        }
+        @media(max-width: 600px){
+            .kol1 {grid-column: span 12}
+            .kol2 {grid-column: span 12}
+            .kol3 {grid-column: span 12}
+            .kol4 {grid-column: span 12}
+            .kol5 {grid-column: span 12}
+            .kol6 {grid-column: span 12}
+            .kol7 {grid-column: span 12}
+            .kol8 {grid-column: span 12}
+            .kol9 {grid-column: span 12}
+            .kol10 {grid-column: span 12}
+            .kol11 {grid-column: span 12}
+            .kol12 {grid-column: span 12}
+        }
+    </style>
+</head>
+<body>
+<<nav>
+    <ul>
+        <li><a href="Min_nettside.html" class="forside">Fotballnyheter</a></li>
+        <li><a href="Landslag.html" class="landslag">Landslag</a></li>
+        <li><a href="Premier_Leauge.html" class="PL">Premier Leauge</a></li>
+        <li><a href="Eliteserien.html" class="eliteserien">Eliteserien</a></li>
+    </ul>
+</nav>
+<main>
+    <article class="kol12"><a href="#">
+        <img src="bilder/rbk2.jpeg" alt="rbk"> <h1>Rosenborg er seriemestere</h1> <p>Se bildene fra feiringen her!</p> </a>
+    </article>
+    <article class="kol6"><a href="#">
+        <img src="bilder/ranheim.jpeg" alt="ranheim"> <h1>Ranheim møter Mjøndalen i kvalik</h1> <p>Ranheim slo Sandnes Ulf 1-0 på hjemmebane</p>
+    </a>
+    </article>
+    <article class="kol3">
+        Artikkel 2
+    </article>
+    <article class="kol3">Artikel 3</article>
+    <article class="kol4">Artikel 4</article>
+    <article class="kol4">Artikel 4</article>
+    <article class="kol4">Artikel 4</article>
+
+</main>
+
+
+</body>
+</html>

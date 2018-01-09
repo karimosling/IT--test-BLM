@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Øving til prøve</title>
+    <style>
+        body {
+            text-align: center;
+            width: 1000px;
+            font-family: sans-serif;
+            background-image: url(Bilder/mat.jpg);
+        }
+        h1{
+            text-shadow: 5px 5px 10px black;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        tr:first-child{
+            background-color: #6A9325;
+        }
+        td:nth-child(odd){
+            background-color: blue;
+        }
+        td {
+            border: 2px solid red;
+            padding: 10px;
+            margin: 10px;
+        }
+        th{
+            border: 2px solid black;
+            padding:10px;
+        }
+        label {
+            display: inline-block;
+        }
+        .bre {
+            width:200px;
+        }
+        .form:hover{
+            background-color: blue;
+        }
+        .form:focus{
+            background-color: palegreen;
+        }
+        .smal {
+            width:20px;
+        }
+        .hovedtekst {
+            background-color: #ED2939;
+            color: #002664;
+            margin: 0 100px;
+            padding: 100px 50px 50px 50px;
+            font-style: italic;
+            font-weight: lighter;
+            font-size: 20px;
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-style: dashed;
+        }
+        .tekst{
+            margin: 0 200px;
+            padding: 10px;
+        }
+        p:hover{
+            background-color: yellow;
+        }
+        .bilde {
+            margin: 200px;
+            box-shadow:50px 50px 200px black;
+            border-radius: 30%;
+        }
+        #bildet{
+            border: fuchsia dashed 10px;
+        }
+        .YT{
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            padding: 15px;
+            border: black solid 2px;
+        }
+        .YT:hover{
+            background-color: darkblue;
+            border: yellow solid 2px;
+        }
+        .YT:active{
+            background-color: darkcyan;
+        }
+        .bilde2{
+            box-shadow: 50px 50px 40px black;
+            margin: 200px;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Her skal jeg gjøre masse shit, for å øve til IT-prøven!!</h1>
+
+<p class="hovedtekst">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi dolorem ducimus, eius iure laboriosam, libero natus necessitatibus obcaecati omnis porro sapiente sequi totam? Dicta doloribus ex nesciunt saepe veniam!
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deleniti itaque quis sapiente. Mollitia, praesentium, veritatis. Ad et hic, magni nisi nulla quia reiciendis rem velit voluptate voluptatibus? Molestiae, sequi.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, quidem, similique. Accusamus, est facere illum iste minima possimus quasi similique velit? Amet expedita maiores pariatur porro quam sequi. Placeat, provident?
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto deserunt eius eos esse iste iusto quae qui saepe sequi. Ab accusantium aliquid beatae consectetur esse exercitationem laudantium molestiae tempora!
+</p>
+
+<img class="bilde" src="Bilder/fugl.jpg" alt="fugl" title="Her ser du en fugl" width="464px">
+<br>
+<img class="bilde2" src="Bilder/korallbleking.jpg" alt="5"> <br>
+<video src="Videofiler_kapittel_1/PSY%20-%20GANGNAM%20STYLE(강남스타일)%20MV.mp4" controls></video> <br>
+<audio src="lyder/katt.mp3" controls ></audio> <br>
+<a href="https://www.youtube.com/watch?v=9bZkp7q19f0" target="_blank">Hør den fantastiske sangen Gagnam Style her!</a>
+<br>
+<br>
+<a href="https://www.aftenposten.no/meninger/sid/i/PVAgb/Vilde-18-anbefaler-Vil-du-le-eller-se-fine-bilder_-ma-du-folge-disse-Instagram-kontoene" target="_blank">
+    <img id="bildet" src="Bilder/vilde.jpeg" alt="vilde" width="500px"></a>
+<p class="tekst">Trykk på bildet over for å lese en fantastisk artikkel skrevet av Vilde Alstad </p>
+<br>
+
+<table>
+    <tr> <th>Navn</th> <th>Alder</th> <th>Skole</th> <th>Hjemkommune</th> <th>Favorittfarge</th></tr>
+    <tr> <td>Kari Mosling</td> <td>18</td> <td rowspan="3">Ski VGS</td> <td>Ski</td> <td>Blå</td></tr>
+    <tr> <td>Vilde Alstad</td> <td>18</td>  <td>Oppgård</td> <td>Blå</td> </tr>
+    <tr> <td>Mina Uthus</td> <td>18</td>  <td>Ski</td> <td>Lilla</td></tr>
+    <tr> <td>Celina Arnheim</td> <td>18</td> <td>Roald Amundsen VGS</td> <td>Oppegård</td> <td>Lilla</td></tr>
+</table>
+<br>
+<br>
+<br>
+
+<a class="YT" href="https://www.youtube.com/" target="_blank">YouTube</a>
+
+
+
+<br>
+<br>
+
+<br>
+<form action="registrering1.html">
+<label class="bre">Skriv inn ditt navnenavn:</label><input class="form" type="text" name="navn"> <br>
+<label class="bre">Skriv inn din alder:</label><input class="form" type="number" name="alder">
+<br>
+<br>
+<h5>Favoritfarge:</h5>
+<input class="smal" type="radio" id="blå" name="farge" value="blå"><label for="blå">Blå</label> <br>
+<input class="smal" type="radio" id="rød" name="farge" value="rød"><label for="rød">Rød</label> <br>
+<input class="smal" type="radio" id="gul" name="farge" value="gul"><label for="gul">Gul</label> <br>
+
+    <select name="brus" id="">
+        <option value="">Brus</option>
+        <option value="PM">Pepsi Max</option>
+        <option value="fanta">Fanta</option>
+        <option value="cola">Coca cola</option>
+    </select>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<button>Send inn svar!</button>
+</form>
+
+
+
+</body>
+</html>

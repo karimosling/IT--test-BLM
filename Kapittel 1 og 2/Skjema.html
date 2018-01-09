@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Skjema</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        label {
+            display: inline-block;
+            width: 60px;
+            padding:10px;
+            border-radius: 5px;
+        }
+
+        input[type=radio]:checked + label{ /*label-elementet som ligger rett etter input-elementet som blir checked */
+            border-color: red;
+        }
+
+
+        [for=gul]{
+            background-color: yellow;
+            border: 2px solid yellow;
+        }
+        [for=grønn]{
+            background-color: green;
+            border: 2px solid green;
+        }
+        [for=blå]{
+            background-color: blue;
+            border: 2px solid blue;
+        }
+
+        input[type=text], input[type=number] {
+            padding: 5px;
+        }
+        input[type=text]:focus, input[type=number]:focus{
+            background-color: dodgerblue;
+        }
+        input[type=radio]{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fyll i skjema</h1>
+
+<form action="reg.html">
+    <label>Navn:</label><input name="Navn" type="text">
+        <br>
+    <label>Alder:</label><input name="Alder" type="number">
+        <br>
+    Velg farge: <br>
+    <input name="farge" id="gul" value="gul" type="radio"><label for="gul"></label>
+    <input name="farge" id="grønn" value="grønn" type="radio"><label for="grønn"></label>
+    <input name="farge" id="blå" value="blå" type="radio"><label for="blå"></label>
+        <br>
+    <select name="farge" id="">
+        <option value="">Farge</option>
+        <option value="rød">rød</option>
+        <option value="blå">blå</option>
+        <option value="gul">gul</option>
+        <option value="grønn">grønn</option>
+        <option value="lilla">lilla</option>
+    </select>
+    <br>
+
+
+    <button>Send inn</button>
+</form>
+</body>
+</html>

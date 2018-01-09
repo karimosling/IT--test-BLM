@@ -1,0 +1,52 @@
+body{
+    text-align: left;
+    width: 600px;
+    font-family: sans-serif;
+    background-color: black;
+    margin: 0 auto;
+}
+ul li {
+    list-style: none;
+    display: inline-block;
+}
+ul li a{
+    padding: 15px;
+    background-color: gray;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    width: 100px;
+    border: 1px black solid;
+    text-align: center;
+}
+p{
+    color: white;
+}
+h1, h2{
+    color: white;
+}
+
+.bilde2{
+    border:solid 2px white;
+    box-shadow: 10px 10px 50px white;
+    border-radius: 10px;
+    margin: 20px;
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+ul li a:active{
+    background-color: lightslategray;
+    color: black;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.bunn{
+    border-top:1px solid white;
+}

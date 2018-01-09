@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Min nettbutikk</title>
+  <link rel="stylesheet" href="stil.css">
+  <style>
+    main {
+      font-family: sans-serif;
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    main > article > img {
+      width: 100%;
+    }
+    @media(max-width: 800px){
+      main{
+      grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media(max-width: 600px){
+      main{
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <article>
+    <img src="bilder/Olabukse.jpg">
+    <p>Olabukse</p>
+  </article>
+  <article>
+    <img src="bilder/chinos.jpg">
+    <p>Chinos</p>
+  </article>
+  <article>
+    <img src="bilder/kortbukse.jpg">
+    <p>Kortbukse</p>
+  </article>
+  <article>
+    <img src="bilder/kortbukse.jpg">
+    <p>Shorts</p>
+  </article>
+  <article>
+    <img src="bilder/hulletebukse.jpg">
+    <p>Hulletebukse </p>
+  </article>
+  <article>
+    <img src="bilder/turbukse.jpg">
+    <p>Turbukse</p>
+  </article>
+  <article>
+    <img src="bilder/hulletebukse.jpg">
+    <p>Kosebukse</p>
+  </article>
+  <article>
+    <img src="bilder/fritidsbukse.jpg">
+    <p>Snekkerbukse</p>
+  </article>
+</main>
+</body>
+</html>

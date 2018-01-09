@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flagget fra prøven</title>
+    <style>
+        div{
+            display: grid;
+            grid-template-columns: repeat(18, 10px);
+            grid-template-rows: repeat(13, 10px);
+            background-color: red;
+        }
+        #gul1{
+            grid-column: 6/9;
+            grid-row: 1/14;
+            background-color: yellow;
+        }
+        #gul2{
+            grid-column: 1/19;
+            grid-row: 6/9;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div id="gul1"></div>
+    <div id="gul2"></div>
+</div>
+
+</body>
+</html>

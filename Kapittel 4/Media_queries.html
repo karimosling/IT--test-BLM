@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>farger</title>
+    <style>
+        main{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 500px;
+        }
+
+        @media(max-width: 1400px){
+            main article{
+                background-color: yellow;
+            }
+        }
+        @media(max-width: 1000px){
+            main article{
+                background-color: green;
+            }
+        }
+        @media(max-width: 800px){
+            main article{
+                background-color: red;
+            }
+        }
+        @media(max-width: 600px){
+            main article{
+                background-color: blue;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+<main>
+    <article>
+        hei
+    </article>
+</main>
+
+</body>
+</html>
